@@ -1,0 +1,4 @@
+/home/alonso/QTprojects/pngHandler/build/Desktop-Debug/CMakeFiles/pngHandler.dir
+/home/alonso/QTprojects/pngHandler/build/Desktop-Debug/CMakeFiles/edit_cache.dir
+/home/alonso/QTprojects/pngHandler/build/Desktop-Debug/CMakeFiles/rebuild_cache.dir
+/home/alonso/QTprojects/pngHandler/build/Desktop-Debug/CMakeFiles/pngHandler_autogen.dir

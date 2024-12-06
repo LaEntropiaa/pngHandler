@@ -1,0 +1,12 @@
+#ifndef PNGHANDLER_GLOBAL_H
+#define PNGHANDLER_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(PNGHANDLER_LIBRARY)
+#define PNGHANDLER_EXPORT Q_DECL_EXPORT
+#else
+#define PNGHANDLER_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // PNGHANDLER_GLOBAL_H
