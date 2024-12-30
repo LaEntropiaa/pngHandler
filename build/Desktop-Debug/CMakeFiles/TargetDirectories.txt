@@ -1,4 +1,8 @@
 /home/alonso/QTprojects/pngHandler/build/Desktop-Debug/CMakeFiles/pngHandler.dir
+/home/alonso/QTprojects/pngHandler/build/Desktop-Debug/CMakeFiles/pngHandlerTest.dir
 /home/alonso/QTprojects/pngHandler/build/Desktop-Debug/CMakeFiles/edit_cache.dir
 /home/alonso/QTprojects/pngHandler/build/Desktop-Debug/CMakeFiles/rebuild_cache.dir
-/home/alonso/QTprojects/pngHandler/build/Desktop-Debug/CMakeFiles/pngHandler_autogen.dir
+/home/alonso/QTprojects/pngHandler/build/Desktop-Debug/CMakeFiles/list_install_components.dir
+/home/alonso/QTprojects/pngHandler/build/Desktop-Debug/CMakeFiles/install.dir
+/home/alonso/QTprojects/pngHandler/build/Desktop-Debug/CMakeFiles/install/local.dir
+/home/alonso/QTprojects/pngHandler/build/Desktop-Debug/CMakeFiles/install/strip.dir

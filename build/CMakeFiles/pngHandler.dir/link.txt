@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -Wl,--dependency-file=CMakeFiles/pngHandler.dir/link.d -shared -Wl,-soname,libpngHandler.so.1 -o libpngHandler.so.1.0 CMakeFiles/pngHandler.dir/src/pngHandler.cpp.o CMakeFiles/pngHandler.dir/src/alphaSeparation.cpp.o CMakeFiles/pngHandler.dir/src/read.cpp.o

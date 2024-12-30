@@ -1,0 +1,4 @@
+/home/alonso/QTprojects/pngHandler/build/CMakeFiles/pngHandler.dir
+/home/alonso/QTprojects/pngHandler/build/CMakeFiles/pngHandlerTest.dir
+/home/alonso/QTprojects/pngHandler/build/CMakeFiles/edit_cache.dir
+/home/alonso/QTprojects/pngHandler/build/CMakeFiles/rebuild_cache.dir

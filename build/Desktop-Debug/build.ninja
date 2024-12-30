@@ -47,27 +47,39 @@ cmake_ninja_workdir = /home/alonso/QTprojects/pngHandler/build/Desktop-Debug/
 #############################################
 # Order-only phony target for pngHandler
 
-build cmake_object_order_depends_target_pngHandler: phony || pngHandler_autogen pngHandler_autogen/mocs_compilation.cpp pngHandler_autogen/timestamp
+build cmake_object_order_depends_target_pngHandler: phony || .
 
-build CMakeFiles/pngHandler.dir/pngHandler_autogen/mocs_compilation.cpp.o: CXX_COMPILER__pngHandler_unscanned_Debug /home/alonso/QTprojects/pngHandler/build/Desktop-Debug/pngHandler_autogen/mocs_compilation.cpp || cmake_object_order_depends_target_pngHandler
-  DEFINES = -DPNGHANDLER_LIBRARY -DQT_CORE_LIB -DpngHandler_EXPORTS
-  DEP_FILE = CMakeFiles/pngHandler.dir/pngHandler_autogen/mocs_compilation.cpp.o.d
-  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fPIC -fcolor-diagnostics -fPIC
-  INCLUDES = -I/home/alonso/QTprojects/pngHandler/build/Desktop-Debug/pngHandler_autogen/include -isystem /usr/include/qt -isystem /usr/include/qt/QtCore -isystem /usr/lib/qt/mkspecs/linux-g++
+build CMakeFiles/pngHandler.dir/src/pngHandler.cpp.o: CXX_COMPILER__pngHandler_unscanned_Debug /home/alonso/QTprojects/pngHandler/src/pngHandler.cpp || cmake_object_order_depends_target_pngHandler
+  DEFINES = -DpngHandler_EXPORTS
+  DEP_FILE = CMakeFiles/pngHandler.dir/src/pngHandler.cpp.o.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fPIC -fcolor-diagnostics
+  INCLUDES = -I/home/alonso/QTprojects/pngHandler/include/pngHandler -I/home/alonso/QTprojects/pngHandler/include
   OBJECT_DIR = CMakeFiles/pngHandler.dir
-  OBJECT_FILE_DIR = CMakeFiles/pngHandler.dir/pngHandler_autogen
-  TARGET_COMPILE_PDB = CMakeFiles/pngHandler.dir/
-  TARGET_PDB = libpngHandler.pdb
+  OBJECT_FILE_DIR = CMakeFiles/pngHandler.dir/src
 
-build CMakeFiles/pngHandler.dir/pnghandler.cpp.o: CXX_COMPILER__pngHandler_unscanned_Debug /home/alonso/QTprojects/pngHandler/pnghandler.cpp || cmake_object_order_depends_target_pngHandler
-  DEFINES = -DPNGHANDLER_LIBRARY -DQT_CORE_LIB -DpngHandler_EXPORTS
-  DEP_FILE = CMakeFiles/pngHandler.dir/pnghandler.cpp.o.d
-  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fPIC -fcolor-diagnostics -fPIC
-  INCLUDES = -I/home/alonso/QTprojects/pngHandler/build/Desktop-Debug/pngHandler_autogen/include -isystem /usr/include/qt -isystem /usr/include/qt/QtCore -isystem /usr/lib/qt/mkspecs/linux-g++
+build CMakeFiles/pngHandler.dir/src/alphaSeparation.cpp.o: CXX_COMPILER__pngHandler_unscanned_Debug /home/alonso/QTprojects/pngHandler/src/alphaSeparation.cpp || cmake_object_order_depends_target_pngHandler
+  DEFINES = -DpngHandler_EXPORTS
+  DEP_FILE = CMakeFiles/pngHandler.dir/src/alphaSeparation.cpp.o.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fPIC -fcolor-diagnostics
+  INCLUDES = -I/home/alonso/QTprojects/pngHandler/include/pngHandler -I/home/alonso/QTprojects/pngHandler/include
   OBJECT_DIR = CMakeFiles/pngHandler.dir
-  OBJECT_FILE_DIR = CMakeFiles/pngHandler.dir
-  TARGET_COMPILE_PDB = CMakeFiles/pngHandler.dir/
-  TARGET_PDB = libpngHandler.pdb
+  OBJECT_FILE_DIR = CMakeFiles/pngHandler.dir/src
+
+build CMakeFiles/pngHandler.dir/src/read.cpp.o: CXX_COMPILER__pngHandler_unscanned_Debug /home/alonso/QTprojects/pngHandler/src/read.cpp || cmake_object_order_depends_target_pngHandler
+  DEFINES = -DpngHandler_EXPORTS
+  DEP_FILE = CMakeFiles/pngHandler.dir/src/read.cpp.o.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fPIC -fcolor-diagnostics
+  INCLUDES = -I/home/alonso/QTprojects/pngHandler/include/pngHandler -I/home/alonso/QTprojects/pngHandler/include
+  OBJECT_DIR = CMakeFiles/pngHandler.dir
+  OBJECT_FILE_DIR = CMakeFiles/pngHandler.dir/src
+
+build CMakeFiles/pngHandler.dir/src/imageData.cpp.o: CXX_COMPILER__pngHandler_unscanned_Debug /home/alonso/QTprojects/pngHandler/src/imageData.cpp || cmake_object_order_depends_target_pngHandler
+  DEFINES = -DpngHandler_EXPORTS
+  DEP_FILE = CMakeFiles/pngHandler.dir/src/imageData.cpp.o.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fPIC -fcolor-diagnostics
+  INCLUDES = -I/home/alonso/QTprojects/pngHandler/include/pngHandler -I/home/alonso/QTprojects/pngHandler/include
+  OBJECT_DIR = CMakeFiles/pngHandler.dir
+  OBJECT_FILE_DIR = CMakeFiles/pngHandler.dir/src
 
 
 # =============================================================================
@@ -75,21 +87,62 @@ build CMakeFiles/pngHandler.dir/pnghandler.cpp.o: CXX_COMPILER__pngHandler_unsca
 
 
 #############################################
-# Link the shared library libpngHandler.so
+# Link the shared library libpngHandler.so.1.0
 
-build libpngHandler.so: CXX_SHARED_LIBRARY_LINKER__pngHandler_Debug CMakeFiles/pngHandler.dir/pngHandler_autogen/mocs_compilation.cpp.o CMakeFiles/pngHandler.dir/pnghandler.cpp.o | /usr/lib/libQt5Core.so.5.15.16 || pngHandler_autogen
+build libpngHandler.so.1.0: CXX_SHARED_LIBRARY_LINKER__pngHandler_Debug CMakeFiles/pngHandler.dir/src/pngHandler.cpp.o CMakeFiles/pngHandler.dir/src/alphaSeparation.cpp.o CMakeFiles/pngHandler.dir/src/read.cpp.o CMakeFiles/pngHandler.dir/src/imageData.cpp.o
   DEP_FILE = CMakeFiles/pngHandler.dir/link.d
   LANGUAGE_COMPILE_FLAGS = -DQT_QML_DEBUG -g
-  LINK_FLAGS = -Xlinker --dependency-file -Xlinker CMakeFiles/pngHandler.dir/link.d
-  LINK_LIBRARIES = /usr/lib/libQt5Core.so.5.15.16
+  LINK_FLAGS = -Xlinker --dependency-file=CMakeFiles/pngHandler.dir/link.d
   OBJECT_DIR = CMakeFiles/pngHandler.dir
   POST_BUILD = :
   PRE_LINK = :
-  SONAME = libpngHandler.so
+  SONAME = libpngHandler.so.1
   SONAME_FLAG = -Wl,-soname,
-  TARGET_COMPILE_PDB = CMakeFiles/pngHandler.dir/
-  TARGET_FILE = libpngHandler.so
-  TARGET_PDB = libpngHandler.pdb
+  TARGET_FILE = libpngHandler.so.1.0
+  TARGET_IMPLIB = /home/alonso/QTprojects/pngHandler/build/Desktop-Debug/
+  TARGET_PDB = pngHandler.so.dbg
+
+
+#############################################
+# Create library symlink libpngHandler.so
+
+build libpngHandler.so.1 libpngHandler.so: CMAKE_SYMLINK_LIBRARY libpngHandler.so.1.0
+  POST_BUILD = :
+
+# =============================================================================
+# Object build statements for EXECUTABLE target pngHandlerTest
+
+
+#############################################
+# Order-only phony target for pngHandlerTest
+
+build cmake_object_order_depends_target_pngHandlerTest: phony || cmake_object_order_depends_target_pngHandler
+
+build CMakeFiles/pngHandlerTest.dir/main.cpp.o: CXX_COMPILER__pngHandlerTest_unscanned_Debug /home/alonso/QTprojects/pngHandler/main.cpp || cmake_object_order_depends_target_pngHandlerTest
+  DEP_FILE = CMakeFiles/pngHandlerTest.dir/main.cpp.o.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fcolor-diagnostics
+  INCLUDES = -I/home/alonso/QTprojects/pngHandler/include/pngHandler -I/home/alonso/QTprojects/pngHandler/include
+  OBJECT_DIR = CMakeFiles/pngHandlerTest.dir
+  OBJECT_FILE_DIR = CMakeFiles/pngHandlerTest.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target pngHandlerTest
+
+
+#############################################
+# Link the executable pngHandlerTest
+
+build pngHandlerTest: CXX_EXECUTABLE_LINKER__pngHandlerTest_Debug CMakeFiles/pngHandlerTest.dir/main.cpp.o | libpngHandler.so.1.0 || libpngHandler.so libpngHandler.so
+  DEP_FILE = CMakeFiles/pngHandlerTest.dir/link.d
+  FLAGS = -DQT_QML_DEBUG -g
+  LINK_FLAGS = -Xlinker --dependency-file=CMakeFiles/pngHandlerTest.dir/link.d
+  LINK_LIBRARIES = -Wl,-rpath,/home/alonso/QTprojects/pngHandler/build/Desktop-Debug  libpngHandler.so.1.0
+  OBJECT_DIR = CMakeFiles/pngHandlerTest.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = pngHandlerTest
+  TARGET_PDB = pngHandlerTest.dbg
 
 
 #############################################
@@ -117,26 +170,45 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 
 #############################################
-# Utility command for pngHandler_autogen
+# Utility command for list_install_components
 
-build pngHandler_autogen: phony CMakeFiles/pngHandler_autogen pngHandler_autogen/timestamp pngHandler_autogen/mocs_compilation.cpp
+build list_install_components: phony
 
 
 #############################################
-# Custom command for pngHandler_autogen/timestamp
+# Utility command for install
 
-build pngHandler_autogen/timestamp pngHandler_autogen/mocs_compilation.cpp | ${cmake_ninja_workdir}pngHandler_autogen/timestamp ${cmake_ninja_workdir}pngHandler_autogen/mocs_compilation.cpp: CUSTOM_COMMAND /usr/bin/moc
-  COMMAND = cd /home/alonso/QTprojects/pngHandler/build/Desktop-Debug && /usr/bin/cmake -E cmake_autogen /home/alonso/QTprojects/pngHandler/build/Desktop-Debug/CMakeFiles/pngHandler_autogen.dir/AutogenInfo.json Debug && /usr/bin/cmake -E touch /home/alonso/QTprojects/pngHandler/build/Desktop-Debug/pngHandler_autogen/timestamp && /usr/bin/cmake -E cmake_transform_depfile Ninja gccdepfile /home/alonso/QTprojects/pngHandler /home/alonso/QTprojects/pngHandler /home/alonso/QTprojects/pngHandler/build/Desktop-Debug /home/alonso/QTprojects/pngHandler/build/Desktop-Debug /home/alonso/QTprojects/pngHandler/build/Desktop-Debug/pngHandler_autogen/deps /home/alonso/QTprojects/pngHandler/build/Desktop-Debug/CMakeFiles/d/bdbc2320303203b36aba1a3874334c9f0686bd65a4885ea39176ff8b982bb109.d
-  DESC = Automatic MOC and UIC for target pngHandler
-  depfile = CMakeFiles/d/bdbc2320303203b36aba1a3874334c9f0686bd65a4885ea39176ff8b982bb109.d
-  deps = gcc
+build CMakeFiles/install.util: CUSTOM_COMMAND all
+  COMMAND = cd /home/alonso/QTprojects/pngHandler/build/Desktop-Debug && /usr/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
   restat = 1
 
+build install: phony CMakeFiles/install.util
+
 
 #############################################
-# Phony custom command for CMakeFiles/pngHandler_autogen
+# Utility command for install/local
 
-build CMakeFiles/pngHandler_autogen | ${cmake_ninja_workdir}CMakeFiles/pngHandler_autogen: phony pngHandler_autogen/timestamp
+build CMakeFiles/install/local.util: CUSTOM_COMMAND all
+  COMMAND = cd /home/alonso/QTprojects/pngHandler/build/Desktop-Debug && /usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build install/local: phony CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
+  COMMAND = cd /home/alonso/QTprojects/pngHandler/build/Desktop-Debug && /usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build install/strip: phony CMakeFiles/install/strip.util
 
 # =============================================================================
 # Target aliases.
@@ -151,7 +223,7 @@ build pngHandler: phony libpngHandler.so
 #############################################
 # Folder: /home/alonso/QTprojects/pngHandler/build/Desktop-Debug
 
-build all: phony libpngHandler.so
+build all: phony libpngHandler.so pngHandlerTest
 
 # =============================================================================
 # Built-in targets
@@ -160,27 +232,20 @@ build all: phony libpngHandler.so
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | .qtc/package-manager/auto-setup.cmake /home/alonso/QTprojects/pngHandler/CMakeLists.txt /usr/lib/cmake/Qt5/Qt5Config.cmake /usr/lib/cmake/Qt5/Qt5ConfigVersion.cmake /usr/lib/cmake/Qt5/Qt5ModuleLocation.cmake /usr/lib/cmake/Qt5Core/Qt5CoreConfig.cmake /usr/lib/cmake/Qt5Core/Qt5CoreConfigExtras.cmake /usr/lib/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake /usr/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake /usr/lib/cmake/Qt5Core/Qt5CoreMacros.cmake /usr/share/cmake/Modules/CMakeCXXCompiler.cmake.in /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeCompilerIdDetection.cmake /usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerSupport.cmake /usr/share/cmake/Modules/CMakeDetermineSystem.cmake /usr/share/cmake/Modules/CMakeFindBinUtils.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeNinjaFindMake.cmake /usr/share/cmake/Modules/CMakeParseArguments.cmake /usr/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake /usr/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake /usr/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake /usr/share/cmake/Modules/CMakeSystem.cmake.in /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake /usr/share/cmake/Modules/CMakeTestCompilerCommon.cmake /usr/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/Clang-CXX-CXXImportStd.cmake /usr/share/cmake/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /usr/share/cmake/Modules/Compiler/Clang-FindBinUtils.cmake /usr/share/cmake/Modules/Compiler/Clang.cmake /usr/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/CrayClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /usr/share/cmake/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/OrangeC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TIClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake /usr/share/cmake/Modules/Internal/FeatureTesting.cmake /usr/share/cmake/Modules/Linker/GNU-CXX.cmake /usr/share/cmake/Modules/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-Determine-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.31.1/CMakeCXXCompiler.cmake CMakeFiles/3.31.1/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | .qtc/package-manager/auto-setup.cmake /home/alonso/QTprojects/pngHandler/CMakeLists.txt /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake/Modules/Compiler/Clang.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /usr/share/cmake/Modules/Linker/GNU-CXX.cmake /usr/share/cmake/Modules/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.31.3/CMakeCXXCompiler.cmake CMakeFiles/3.31.3/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build .qtc/package-manager/auto-setup.cmake /home/alonso/QTprojects/pngHandler/CMakeLists.txt /usr/lib/cmake/Qt5/Qt5Config.cmake /usr/lib/cmake/Qt5/Qt5ConfigVersion.cmake /usr/lib/cmake/Qt5/Qt5ModuleLocation.cmake /usr/lib/cmake/Qt5Core/Qt5CoreConfig.cmake /usr/lib/cmake/Qt5Core/Qt5CoreConfigExtras.cmake /usr/lib/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake /usr/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake /usr/lib/cmake/Qt5Core/Qt5CoreMacros.cmake /usr/share/cmake/Modules/CMakeCXXCompiler.cmake.in /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeCompilerIdDetection.cmake /usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerSupport.cmake /usr/share/cmake/Modules/CMakeDetermineSystem.cmake /usr/share/cmake/Modules/CMakeFindBinUtils.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeNinjaFindMake.cmake /usr/share/cmake/Modules/CMakeParseArguments.cmake /usr/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake /usr/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake /usr/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake /usr/share/cmake/Modules/CMakeSystem.cmake.in /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake /usr/share/cmake/Modules/CMakeTestCompilerCommon.cmake /usr/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/Clang-CXX-CXXImportStd.cmake /usr/share/cmake/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /usr/share/cmake/Modules/Compiler/Clang-FindBinUtils.cmake /usr/share/cmake/Modules/Compiler/Clang.cmake /usr/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/CrayClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /usr/share/cmake/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/OrangeC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TIClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake /usr/share/cmake/Modules/Internal/FeatureTesting.cmake /usr/share/cmake/Modules/Linker/GNU-CXX.cmake /usr/share/cmake/Modules/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-Determine-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.31.1/CMakeCXXCompiler.cmake CMakeFiles/3.31.1/CMakeSystem.cmake: phony
-
-
-#############################################
-# Clean additional files.
-
-build CMakeFiles/clean.additional: CLEAN_ADDITIONAL
-  CONFIG = Debug
+build .qtc/package-manager/auto-setup.cmake /home/alonso/QTprojects/pngHandler/CMakeLists.txt /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake/Modules/Compiler/Clang.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /usr/share/cmake/Modules/Linker/GNU-CXX.cmake /usr/share/cmake/Modules/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.31.3/CMakeCXXCompiler.cmake CMakeFiles/3.31.3/CMakeSystem.cmake: phony
 
 
 #############################################
 # Clean all the built files.
 
-build clean: CLEAN CMakeFiles/clean.additional
+build clean: CLEAN
 
 
 #############################################

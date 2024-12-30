@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/pngHandlerTest.dir/link.d CMakeFiles/pngHandlerTest.dir/main.cpp.o -o pngHandlerTest  -Wl,-rpath,/home/alonso/QTprojects/pngHandler/build libpngHandler.so.1.0

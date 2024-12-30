@@ -1,0 +1,10 @@
+# ninja log v6
+2	32	1735235567750042496	CMakeFiles/pngHandler.dir/src/alphaSeparation.cpp.o	d71f7f4dc8d3faf
+2	509	1735235567750042496	CMakeFiles/pngHandler.dir/src/pngHandler.cpp.o	24fb6c4b30113209
+3	516	1735235567750042496	CMakeFiles/pngHandlerTest.dir/main.cpp.o	48e89ca1dfc682ef
+509	615	1735235568256709196	libpngHandler.so.1.0	af76106fd7abbb97
+615	638	1735235568363375869	libpngHandler.so.1	63da58edce9aadd0
+1	71	1735406812810949832	build.ninja	fe0a42e992f7365
+615	638	1735235568363375869	libpngHandler.so	63da58edce9aadd0
+638	764	1735235568386709204	pngHandlerTest	998ebf3640c69767
+2	509	1735235567750042496	CMakeFiles/pngHandler.dir/src/read.cpp.o	aee54fdf001c0ded
