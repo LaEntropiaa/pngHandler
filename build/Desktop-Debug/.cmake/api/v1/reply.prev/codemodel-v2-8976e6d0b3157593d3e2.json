@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-041cbfd39b0bd9aa2c19.json",
+					"jsonFile" : "directory-.-Debug-18eec9c1f529da027da3.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -42,14 +42,14 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "pngHandler::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-pngHandler-Debug-1baed2e980e2ae8ab5f6.json",
+					"jsonFile" : "target-pngHandler-Debug-851cfbf460f16b47ab74.json",
 					"name" : "pngHandler",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "pngHandlerTest::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-pngHandlerTest-Debug-8490580f19b0c04427f9.json",
+					"jsonFile" : "target-pngHandlerTest-Debug-8577665e328df5e32cdb.json",
 					"name" : "pngHandlerTest",
 					"projectIndex" : 0
 				}

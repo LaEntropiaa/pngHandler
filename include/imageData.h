@@ -1,39 +1,38 @@
 #ifndef IMAGEDATA_H
 #define IMAGEDATA_H
 
-#include <array>
+#include <vector>
+#include <iostream>
+#include <string>
+#include <fstream>
+#include <ios>
+#include <cstring>
 
 namespace pngh {
 
-struct RGBAPixel {
-    unsigned char r;
-    unsigned char g;
-    unsigned char b;
-    unsigned char a;
-
-    RGBAPixel();
-    RGBAPixel(unsigned char r, unsigned char g,
-              unsigned char b, unsigned char a);
-};
-
-struct RGBPixel {
-    unsigned char r;
-    unsigned char g;
-    unsigned char b;
-
-    RGBPixel();
-    RGBPixel(unsigned char r, unsigned char g, unsigned char b);
-};
-
-template <typename PixelType>
 class ReferenceImage {
 private:
-    std::array<PixelType> data;
+    int length;
     int width;
-    int height;
+    std::vector<unsigned char> data;
+
+
+    void read_ppm(const std::string& file_path);
+    void hello();
 
 public:
-    ReferenceImage(int width, int height, std::array<PixelType> data);
+    enum class Type {
+        RGB,
+        RGBA
+    };
+
+    enum class Format {
+        PPM
+    };
+
+    ReferenceImage();
+    ReferenceImage(int length, int width, std::vector<unsigned char> data);
+    void read(const std::string& file_path, Format format);
 
 };
 

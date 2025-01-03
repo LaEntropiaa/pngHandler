@@ -5,10 +5,13 @@
 #include <iostream>
 #include <fstream>
 #include <ios>
+#include <cstring>
+#include "imageData.h"
 
 namespace pngh{
 
-void read_ppm(std::string& path);
+void read_ppm(std::string path);
+
 
 }
 
