@@ -65,14 +65,6 @@ build CMakeFiles/pngHandler.dir/src/alphaSeparation.cpp.o: CXX_COMPILER__pngHand
   OBJECT_DIR = CMakeFiles/pngHandler.dir
   OBJECT_FILE_DIR = CMakeFiles/pngHandler.dir/src
 
-build CMakeFiles/pngHandler.dir/src/read.cpp.o: CXX_COMPILER__pngHandler_unscanned_Debug /home/alonso/QTprojects/pngHandler/src/read.cpp || cmake_object_order_depends_target_pngHandler
-  DEFINES = -DpngHandler_EXPORTS
-  DEP_FILE = CMakeFiles/pngHandler.dir/src/read.cpp.o.d
-  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fPIC -fcolor-diagnostics
-  INCLUDES = -I/home/alonso/QTprojects/pngHandler/include/pngHandler -I/home/alonso/QTprojects/pngHandler/include
-  OBJECT_DIR = CMakeFiles/pngHandler.dir
-  OBJECT_FILE_DIR = CMakeFiles/pngHandler.dir/src
-
 build CMakeFiles/pngHandler.dir/src/imageData.cpp.o: CXX_COMPILER__pngHandler_unscanned_Debug /home/alonso/QTprojects/pngHandler/src/imageData.cpp || cmake_object_order_depends_target_pngHandler
   DEFINES = -DpngHandler_EXPORTS
   DEP_FILE = CMakeFiles/pngHandler.dir/src/imageData.cpp.o.d
@@ -89,7 +81,7 @@ build CMakeFiles/pngHandler.dir/src/imageData.cpp.o: CXX_COMPILER__pngHandler_un
 #############################################
 # Link the shared library libpngHandler.so.1.0
 
-build libpngHandler.so.1.0: CXX_SHARED_LIBRARY_LINKER__pngHandler_Debug CMakeFiles/pngHandler.dir/src/pngHandler.cpp.o CMakeFiles/pngHandler.dir/src/alphaSeparation.cpp.o CMakeFiles/pngHandler.dir/src/read.cpp.o CMakeFiles/pngHandler.dir/src/imageData.cpp.o
+build libpngHandler.so.1.0: CXX_SHARED_LIBRARY_LINKER__pngHandler_Debug CMakeFiles/pngHandler.dir/src/pngHandler.cpp.o CMakeFiles/pngHandler.dir/src/alphaSeparation.cpp.o CMakeFiles/pngHandler.dir/src/imageData.cpp.o
   DEP_FILE = CMakeFiles/pngHandler.dir/link.d
   LANGUAGE_COMPILE_FLAGS = -DQT_QML_DEBUG -g
   LINK_FLAGS = -Xlinker --dependency-file=CMakeFiles/pngHandler.dir/link.d

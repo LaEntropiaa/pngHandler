@@ -11,15 +11,6 @@
 namespace pngh {
 
 class ReferenceImage {
-private:
-    int length;
-    int width;
-    std::vector<unsigned char> data;
-
-
-    void read_ppm(const std::string& file_path);
-    void hello();
-
 public:
     enum class Type {
         RGB,
@@ -33,6 +24,15 @@ public:
     ReferenceImage();
     ReferenceImage(int length, int width, std::vector<unsigned char> data);
     void read(const std::string& file_path, Format format);
+
+private:
+    int length;
+    int width;
+    Type type;
+    std::vector<unsigned char> data;
+
+    void read_ppm(const std::string& file_path);
+
 
 };
 

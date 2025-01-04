@@ -10,7 +10,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_library(pngHandler SHARED
     src/pngHandler.cpp
     src/alphaSeparation.cpp
-    src/read.cpp
     src/imageData.cpp
 
 )

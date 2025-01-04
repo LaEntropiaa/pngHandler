@@ -4,8 +4,8 @@
 #include <iostream>
 #include <string>
 
-#include "read.h"
 #include "alphaSeparation.h"
+#include "imageData.h"
 
 void test(std::string message);
 
